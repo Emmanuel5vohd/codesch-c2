@@ -1,0 +1,101 @@
+.first_div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: first_div_animate;
+    animation-duration: 4s;
+}
+
+@keyframes first_div_animate {
+    from {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+    to {
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.second_div {
+    width: 100px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    animation-name: second_div_animate;
+    animation-duration: 10s;
+    animation-delay: -2s;
+
+}
+
+@keyframes second_div_animate {
+    0% {
+        width: 100px;
+        background-color: blue;
+    }
+    30% {
+        width: 150px;
+        background-color: red;
+    }
+    60% {
+        width: 200px;
+        background-color: green;
+    }
+    100% {
+        width: 300px;
+        background-color: brown;
+    }
+}
+
+.third_div {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    /* animation-name: third_element;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; */
+
+    animation: third_element 10s ease-in-out 2s 2 alternate-reverse forwards;
+}
+
+@keyframes third_element {
+    0% {
+        top: 20px;
+        left: 20px;
+        background-color: red;
+    }
+    25% {
+        top: 20px;
+        left: 90%;
+        background-color: green;
+    }
+    50% {
+        top: 80%;
+        left: 90%;
+        background-color: blue;
+    }
+    
+    75% {
+        top: 80%;
+        left: 20px;
+        background-color: black;
+    }
+    100% {
+        top: 20px;
+        left: 20px;
+        background-color: grey;
+        display: none;
+    }
+}
